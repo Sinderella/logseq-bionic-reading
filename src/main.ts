@@ -8,9 +8,10 @@ const addTextVide = async (blockId: string, recursive: boolean) => {
   if (block === null) {
     return;
   }
+  const cleanedContent = block.content.replaceAll('**', '');
   logseq.Editor.updateBlock(
     block.uuid,
-    textVide(block.content, { sep: ['**', '**'] })
+    textVide(cleanedContent, { sep: ['**', '**'] })
   );
 
   if (recursive && block.children !== undefined) {
@@ -28,8 +29,6 @@ const addTextVide = async (blockId: string, recursive: boolean) => {
 };
 
 const main = async () => {
-  console.log('testt');
-
   logseq.Editor.registerSlashCommand('Bionic Reading: Apply', async (e) => {
     await addTextVide(e.uuid, false);
   });
