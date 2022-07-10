@@ -1,5 +1,7 @@
 # Bionic Reading plugin for logseq
 
+Note: This plugin is created for educational purposes. For a better implementation, please checkout https://github.com/sawhney17/logseq-bionic-speedreader
+
 The plugin relies on [text-vide](https://github.com/Gumball12/text-vide) to transform the paragraph(s). This plugin only introduces the following slash commands.
 
 - `Bionic Reading: Apply`, apply bionic reading only to the current block
