@@ -7,4 +7,6 @@ The plugin relies on [text-vide](https://github.com/Gumball12/text-vide) to tran
 - `Bionic Reading: Apply Recursively`, which includes children blocks
 - `Bionic Reading: Unapply Recursively`, unapply current block and its children
 
+![poc](./poc.gif)
+
 Inspired by https://www.reddit.com/r/logseq/comments/utkrin/would_make_for_a_cool_plugin/
